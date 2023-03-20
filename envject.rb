@@ -5,11 +5,11 @@
 class Envject < Formula
   desc ""
   homepage "https://github.com/michaelhenry/homebrew-envject"
-  version "2.0.0-alpha"
+  version "2.0.0-beta"
 
   on_macos do
-    url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-alpha/envject_2.0.0-alpha_darwin_all.tar.gz"
-    sha256 "1023220419876dfa8b00773715919a8360e5842fa4661f1bd17d741416ab010f"
+    url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-beta/envject_2.0.0-beta_darwin_all.tar.gz"
+    sha256 "821aac692cb563667bc4e89d7eac525e3fe3b5b364c0679c25e45910c83b64e5"
 
     def install
       bin.install "envject"
@@ -18,16 +18,16 @@ class Envject < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-alpha/envject_2.0.0-alpha_linux_arm64.tar.gz"
-      sha256 "4d8d563986b47abd0e8f2629b4187489c9cf03c509a42fec0ec7316076dab5bd"
+      url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-beta/envject_2.0.0-beta_linux_arm64.tar.gz"
+      sha256 "1851c209b6254c2db19d56fb892d2ddc0f16bcc69a620cd9139308a57d8cda54"
 
       def install
         bin.install "envject"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-alpha/envject_2.0.0-alpha_linux_amd64.tar.gz"
-      sha256 "da4d1715cd8d64073aa7a6e7ee8498330755ba9fc46a1e4c1048a0d48805c48d"
+      url "https://github.com/michaelhenry/envject/releases/download/v2.0.0-beta/envject_2.0.0-beta_linux_amd64.tar.gz"
+      sha256 "59c2b2e91a7c25deea35dcec7f48f3d9871ddd9ca7a9e16f1ac32a2219364b51"
 
       def install
         bin.install "envject"
